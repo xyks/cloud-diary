@@ -1,0 +1,37 @@
+<div class="user-center" mdl-shadow="2">
+   <mdl-layout mdl-layout-fixed-header mdl-layout-header-seamed>
+      <mdl-layout-header>
+         <mdl-layout-header-row>
+            <mdl-layout-title>User Center</mdl-layout-title>
+            <mdl-layout-spacer></mdl-layout-spacer>
+            <!-- Navigation. We hide it in small screens. -->
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+	            <a  class="mdl-navigation__link" *ngFor="let card of cards"
+				  [class.selected]="card === selectedCard"
+				  (click)="onSelect(card)">
+				  {{card.title}}
+				</a>
+            <a class="mdl-navigation__link" [routerLink]="['/home']">Home</a>
+            </nav>
+         </mdl-layout-header-row>
+      </mdl-layout-header>
+      <mdl-layout-drawer>
+         <mdl-layout-title>User Center</mdl-layout-title>
+			<nav class="mdl-navigation ">
+	            <a  class="mdl-navigation__link" *ngFor="let card of cards"
+				  [class.selected]="card === selectedCard"
+				  (click)="onSelect(card)">
+				  {{card.title}}
+				</a>
+               <a class="mdl-navigation__link" [routerLink]="['/home']">Home</a>
+            </nav>
+      </mdl-layout-drawer>
+      <mdl-layout-content>
+      	<div *ngIf="selectedCard">
+		     	<app-basic-info *ngIf="selectedCard.title == 'Basic'"></app-basic-info>
+            <app-basic-image *ngIf="selectedCard.title == 'Image'"></app-basic-image>
+            <app-user-security *ngIf="selectedCard.title == 'Security'"></app-user-security>
+		    </div>
+      </mdl-layout-content>
+   </mdl-layout>
+</div>

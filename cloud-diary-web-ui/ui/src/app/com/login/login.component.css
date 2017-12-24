@@ -1,0 +1,21 @@
+	.login{
+		background-image: url(/assets/img/space4.jpg);
+		color: white;
+	}
+	
+	.up {
+		height: 400px;
+		
+	}
+	.up h1{
+		text-align: center;
+		padding-top:  200px; 
+
+	}
+	.center {
+		height: 220px;
+
+	}	
+	.down {
+		height: 400px;
+	}

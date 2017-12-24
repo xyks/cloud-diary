@@ -1,0 +1,19 @@
+file:
+  directory: /var/minidiary/
+  image: image/
+  log: log/
+spring:
+  datasource:
+    jndi-name: java:/comp/env/jdbc/diary
+
+  jpa:
+      hibernate:
+        ddl-auto: validate
+      show-sql: false
+
+  http:
+    multipart:
+      max-file-size: 500KB
+      max-request-size: 1MB
+
+

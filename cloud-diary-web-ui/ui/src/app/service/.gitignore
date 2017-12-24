@@ -1,0 +1,5 @@
+/auth-guard.service.spec.ts
+/authentication.service.spec.ts
+/diary.service.spec.ts
+/keycode.service.spec.ts
+/user.service.spec.ts

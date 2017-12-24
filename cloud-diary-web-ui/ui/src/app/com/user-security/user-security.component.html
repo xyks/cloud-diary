@@ -1,0 +1,16 @@
+<form [formGroup]="form">
+  <p>
+    <mdl-textfield  label="Password" type="password" formControlName="password" floating-label></mdl-textfield>
+  </p>
+  <p>
+    <mdl-textfield label="New password" type="password" formControlName="newPassword" floating-label></mdl-textfield>
+  </p>
+	<p>
+    <mdl-textfield label="Repeat new password" type="password" formControlName="confirmPassword" floating-label></mdl-textfield>
+  </p>
+
+  <p>
+    <button mdl-button (click)="onSubmit()"  [disabled]="!form.valid" mdl-button-type="raised" mdl-ripple mdl-colored="primary">Change</button>
+  </p>
+</form>
+  

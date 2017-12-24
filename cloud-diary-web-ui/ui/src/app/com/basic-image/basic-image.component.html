@@ -1,0 +1,42 @@
+
+ <p-blockUI [blocked]="blocked"></p-blockUI>
+<form id="dropzone" class="dropzone">
+	<div class="dz-message">
+    Drop file here or click to upload
+		<br>
+	</div>
+
+</form>
+
+
+<div class="row" style="text-align: left; font-size: 12px; margin: 20px 15px; color: gray;">
+  <span>* Image size < 500 KB</span><br>
+<span>* Head portrait: 155px * 155px</span><br>
+<span>* Cover: height ≈ 470px; width > 1080px</span>
+</div>
+     
+
+
+
+
+
+<div class="row" style="margin-top: 8px;">
+	<mdl-radio value="headPortrait" [(ngModel)]="imageType" mdl-ripple><mdl-icon  class="icon material-icons" >account_circle</mdl-icon></mdl-radio>
+	<mdl-radio  value="cover" [(ngModel)]="imageType" mdl-ripple><mdl-icon  class="icon material-icons" >wallpaper</mdl-icon></mdl-radio>
+
+</div>
+
+<!-- 
+<p style="font-size: 12px;"> Image file size can not be bigger than 500KB</p>
+<p style="font-size: 12px;">Head portrait(recommended: 155px * 155px)</p>
+<p style="font-size: 12px;"> For cover, recommended image size: height ≈ 470px; width > 1080px</p> -->
+
+<div class="row">
+  <button mdl-button (click)="onSubmit()"  mdl-button-type="raised" mdl-ripple mdl-colored="primary">Upload</button>
+</div>
+
+	
+
+
+  
+

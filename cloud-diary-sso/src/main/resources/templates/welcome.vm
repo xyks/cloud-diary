@@ -1,0 +1,18 @@
+<p>Dear ${to},<p>
+<p style="font-size: 30px; color:rgb(27, 154, 247); font-weight: bold">Welcome to Mini Diary</p>
+<p>Thank you for signing up with us. Your new account has been setup and you can enjoy the trip now.</p>
+<p>To login, click following button or visit ${url}</p>
+<p>
+<a target="_blank" href="${url}"><button style="height: 20px;
+line-height: 12px; 
+width:150px; 
+background:rgb(27, 154, 247);
+color: white; 
+font-size: 12px;
+border:0px;
+font-weight: bold;
+text-decoration: none;
+border-radius: 2px;" type="button">Go to MiniDiary.org</button></a>
+</p>
+<p>Sincerely,</p>
+<p>Mini Diary Group</p>

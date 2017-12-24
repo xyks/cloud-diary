@@ -1,0 +1,42 @@
+<div class="login-form container-fluid">
+ <p-blockUI [blocked]="blocked"></p-blockUI>
+   
+	<div *ngIf="showConnect" class="row connect">
+		<input (click)="clickConnect()" type="button"  class="button button-glow button-border button-rounded button-primary" value="Connect"/>
+	</div>
+	
+	<div *ngIf="!showConnect" class="row input">
+		<div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2">
+			
+			<form  action="#" class="form-horizontal">
+				<div class="form-group">
+					<label for="email" class="col-md-3 control-label">Email</label>
+					<div class="col-md-9 ">
+						<input [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}" type="email" id="email"  class="form-control  button-glow " />
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="password" class="col-md-3 control-label">Password</label>
+					<div class="col-md-9">
+						<input [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}" type="password" id="password"  class="form-control button-glow" />
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="col-md-9 col-md-offset-3 col-xs-12">
+						<input (click)="send()" type="button"  class="button button-glow button-border button-rounded button-primary form-control" value="Log in"/>
+
+	<input *ngIf="showMore" style="margin-top: 20px;" (click)="more()" type="button"  class="button  button-border button-rounded button-primary form-control" value="More"/>
+
+						<input *ngIf="!showMore" style="margin-top: 20px;" (click)="signup()" type="button"  class="button button-glow button-border button-rounded button-primary form-control" value="Sign up"/>
+
+						<input *ngIf="!showMore" style="margin-top: 20px;" (click)="forgetPassword()" type="button"  class="button button-glow button-border button-rounded button-primary form-control" value="Forget password"/> 
+					</div>
+				</div>
+			</form>
+
+		</div>
+	</div>
+
+</div>

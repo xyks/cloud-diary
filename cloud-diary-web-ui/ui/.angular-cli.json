@@ -1,0 +1,76 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "diary-web-ui"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "assets/css/buttons.css",
+        "assets/css/mdl.css",
+        "assets/js/quill/quill.snow.css",
+        "assets/js/air-datepicker/dist/css/datepicker.min.css",
+        "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+        "assets/css/icon.css",
+        "assets/js/dropzone/dropzone.css",
+          "../node_modules/angular2-busy/build/style/busy.css",
+         "../node_modules/primeng/resources/themes/omega/theme.css" ,
+        "../node_modules/primeng/resources/primeng.min.css" 
+      ],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "assets/js/quill/quill.min.js",
+        "assets/js/air-datepicker/dist/js/datepicker.min.js",
+        "assets/js/air-datepicker/dist/js/i18n/datepicker.en.js",
+        "assets/js/dropzone/dropzone.js",
+        "../node_modules/crypto-js/crypto-js.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json"
+    },
+    {
+      "project": "src/tsconfig.spec.json"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}

@@ -1,0 +1,16 @@
+<form [formGroup]="form">
+  <p>
+    <mdl-textfield  label="Nick Name" type="text" formControlName="nickName" floating-label></mdl-textfield>
+  </p>
+  <p>
+    <mdl-textfield label="Signature" type="text" formControlName="signature" floating-label></mdl-textfield>
+  </p>
+  <p>
+    <mdl-radio value="M" formControlName="gender" mdl-ripple>Male</mdl-radio>
+    <mdl-radio value="F" formControlName="gender" mdl-ripple>Female</mdl-radio>
+  </p>
+  <p>
+    <button mdl-button (click)="onSubmit()"  [disabled]="!form.valid" mdl-button-type="raised" mdl-ripple mdl-colored="primary">Update</button>
+  </p>
+</form>
+  

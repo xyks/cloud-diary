@@ -1,0 +1,20 @@
+<div>
+  <p class="mdl-dialog__title">Enter Key Code<mdl-icon (click)="showInfo= !showInfo">info_outline</mdl-icon></p>
+  <div class="mdl-dialog__content">  
+  <mdl-list>
+  <mdl-list-item *ngIf="showInfo">
+  	<p>Key Code is used to encrypt diary content. You can set it up only for the first time, and it can not be changed later.<br>
+    Before you can go on with diary function, you will be asked to provide the Key Code. <br>
+    If you forget it, no one can help you to get it back and you will lose all the diary records.<br>
+    It's strongly recommended that write down the Key Code.</p>
+  </mdl-list-item>
+    <mdl-list-item>
+    <mdl-textfield type="password" label="Code" [(ngModel)]="keyCode" floating-label></mdl-textfield>
+  </mdl-list-item>
+  </mdl-list>
+    
+  </div>
+  <div class="mdl-dialog__actions">
+    <button mdl-button (click)="submit()" mdl-button-type="raised" mdl-colored="primary" mdl-ripple>Enter</button>
+  </div>
+</div>

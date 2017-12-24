@@ -1,0 +1,21 @@
+adminemail: minidiary@bossge.cn
+
+spring:
+  datasource:
+    jndi-name: java:/comp/env/jdbc/sso
+  mail:
+    jndi-name: java:comp/env/mail/session
+  jpa:
+      hibernate:
+        ddl-auto: validate
+      show-sql: false
+logging:
+  level:
+    root: ERROR
+    org:
+      springframework:
+        web: ERROR
+      hibernate: ERROR
+
+
+

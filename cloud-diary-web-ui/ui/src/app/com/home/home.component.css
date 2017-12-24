@@ -1,0 +1,56 @@
+.home{
+		min-width: 280px;
+		
+}
+
+.home .up{
+	height: 470px;
+	background-color: rgb(3,169,244);
+}
+
+.home .up .row{
+	font-weight: bold;
+	color: white;
+}
+
+.home .up .r1{
+	padding: 20px 15px;
+	height: 120px;
+}
+.home .up .r2{
+	height: 155px;
+	text-align: center;
+}
+
+.home .up .r2 img{
+	height: 154px;
+	width: 154px;
+}
+
+.home .up .r3{
+	padding: 20px 15px;
+	height: 200px;
+}
+
+.home .center{
+	min-height: 600px;
+}
+
+.home .center .left{
+
+	padding: 20px 15px;
+}
+
+.home .center .right{
+	
+	padding: 20px 15px;
+
+
+
+	
+
+	/*background-image: url(img/x2.png);*/
+}
+
+
+

@@ -1,0 +1,18 @@
+.dropzone{
+	cursor: pointer;
+	border: 2px dashed #0087F7;
+	border-radius: 5px;
+	min-height: 164px;
+	background: transparent;
+;
+}
+
+.dropzone .dz-message{
+	color: gray;
+    font-weight: 600;
+}
+
+.dropzone .dz-preview.dz-image-preview {
+	/*changed in the source css*/
+	background: transparent !important;
+}

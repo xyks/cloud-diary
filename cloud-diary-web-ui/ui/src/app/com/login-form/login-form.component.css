@@ -1,0 +1,23 @@
+	.login-form{		
+		height: 100%;
+		/*color: white;*/
+	}
+	.login-form .connect{
+		text-align: center;
+	}
+
+	.login-form .connect input{
+		border: none;
+	}
+
+	.login-form input{
+		background-color: transparent;
+	}
+
+
+	.login-form .form-control{
+		border: none;
+	}
+
+
+

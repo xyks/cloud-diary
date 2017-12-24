@@ -1,0 +1,75 @@
+<div class="container-fluid home">
+	<div class="row up" [ngStyle]="{'background-image': 'url('+user.coverURL+')'}" >
+		<div class="container">
+			<div class="row r1">
+				<div class="col-sm-2 ">
+				<p><a [routerLink]="['/me']">{{user.nickName}}</a></p>
+				</div>
+				<div class="col-sm-8">
+				    {{user.signature}} 
+				</div>
+				<div class="col-sm-2">
+					<p><a  (click)="logout()" >Logout</a></p>
+				</div>
+
+			</div>
+			<div class="row r2">
+				<img *ngIf="user.headPortraitURL" src="{{user.headPortraitURL}}" alt="..." class="img-circle">
+			</div>
+			<div class="row r3">
+				<div class="col-sm-4 ">
+				Last Login Date: {{user.lastLoginDate }}
+				
+				</div>
+				<div class="col-sm-4">
+				Last Login IP: {{user.lastLoginIp}} 
+					
+				</div>
+
+				<div class="col-sm-4">
+						Current IP: {{user.ip}} 
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="row center">
+		<div class="col-sm-5 col-md-4 col-lg-3 left">
+			
+
+					<app-mydatepicker (change)="dateChange($event)"></app-mydatepicker>
+
+
+<a href="#" class="btn btn-default  disabled form-control"  style="margin-bottom:  5px; margin-top: 5px;" role="button">{{selectedDiary.year}}-{{selectedDiary.month}}-{{selectedDiary.day}}</a>
+					<div >
+						<button *ngIf="isPreview && viewOnlyMode" (click)="preview()" class="button  button-primary  form-control"> Preview </button>
+						<button *ngIf="!isPreview && viewOnlyMode" (click)="edit()" class="button  button-primary  form-control"> Edit </button>
+					</div >
+	
+					<div *ngIf="!viewOnlyMode" class="row"  role="group" aria-label="..." >
+					  
+					 	<div class="col-xs-6">
+					 		 <button (click)="save()" type="button" class="button  button-primary  form-control">Save</button>					 		
+					 	</div>
+					 	
+					 	<div class="col-xs-6">
+					 		  <button (click)="cancel()" type="button" class="button  button-primary  form-control">Discard</button>				
+
+					 	</div>
+					   
+					  
+					</div>
+
+			
+		</div>
+		<div class="col-sm-7 col-md-8 col-lg-9 right">
+			
+			<app-richtext  [input]="selectedDiary.data" [editMode]="!viewOnlyMode" (change)="editorTextChange($event)"></app-richtext>
+
+		</div>
+
+	</div>
+
+
+	
+</div>

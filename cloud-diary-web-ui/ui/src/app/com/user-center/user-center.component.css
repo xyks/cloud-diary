@@ -1,0 +1,21 @@
+.user-center{
+  /*background: url('/assets/img/bg102.jpg') ;*/
+  /*background-color: #33CCFF;*/
+  height: 1020px;
+}
+.user-center .mdl-layout__header,
+.user-center .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+.user-center .selected {
+    background-color: #CFD8DC !important;
+    color: white;
+ }
+
+ .user-center mdl-layout-content{
+ 	padding: 20px 15px;
+ 	text-align: center;
+ }

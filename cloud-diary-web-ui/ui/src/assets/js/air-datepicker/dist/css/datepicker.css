@@ -177,7 +177,7 @@
   font-family: Tahoma, sans-serif;
   font-size: 14px;
   color: #4a4a4a;
-  width: 250px;
+ /*  width: 250px; */
   position: absolute;
   left: -100000px;
   opacity: 0;

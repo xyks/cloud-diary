@@ -69,7 +69,7 @@
    	<dependency>
 		<groupId>com.sun.mail</groupId>
 		<artifactId>javax.mail</artifactId>
-		<scope>provided</scope>
+		<!-- <scope>provided</scope> -->
 	</dependency>
      <dependency>
             <groupId>org.projectlombok</groupId>

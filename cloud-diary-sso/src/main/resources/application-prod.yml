@@ -4,7 +4,7 @@ spring:
   datasource:
     jndi-name: java:/comp/env/jdbc/sso
   mail:
-    jndi-name: java:comp/env/mail/session
+      jndi-name: java:comp/env/mail/session
   jpa:
       hibernate:
         ddl-auto: validate
